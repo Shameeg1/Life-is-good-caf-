@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Life is Good Café</title>
+
+  <!-- Favicon -->
+
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/616/616408.png">
+
+  <!-- Meta Tags -->
+
+  <meta name="description" content="Life is Good Café - Where every sip and bite feels good. Coffee, shakes, smoothies, fresh meals and more!">
+
+  <meta name="keywords" content="Life is Good Café, Cape Town Café, Coffee Shop, Smoothies, Fresh Food, Woodstock Cafe">
+
+  <meta name="author" content="Life is Good Café">
+
+  <!-- Open Graph -->
+
+  <meta property="og:title" content="Life is Good Café" />
+
+  <meta property="og:description" content="Where every sip and bite feels good. Visit us in Woodstock, Cape Town!" />
+
+  <meta property="og:image" content="https://cdn-icons-png.flaticon.com/512/616/616408.png" />
+
+  <meta property="og:url" content="https://your-website.com/" />
+
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter -->
+
+  <meta name="twitter:title" content="Life's Good Café">
+
+  <meta name="twitter:description" content="Where every sip and bite feels good. Visit us today!">
+
+  <meta name="twitter:image" content="https://cdn-icons-png.flaticon.com/512/616/616408.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Internal CSS -->
+
+  <style>
+
+    /* General */
+
+    body {
+
+      font-family: 'Poppins', sans-serif;
+
+      background-color: #fff;
+
+      margin: 0;
+
+      padding: 0;
+
+      color: #ffccdd; /* Soft pink */
+
+    }
+
+    /* Header */
+
+    .header {
+
+      background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+
+      height: 70vh;
+
+      display: flex;
+
+      justify-content: center;
+
+      align-items: center;
+
+      text-align: center;
+
+    }
+
+    .header-content h1 {
+
+      font-size: 4rem;
+
+      margin: 0;
+
+      color: #ffccdd;
+
+    }
+
+    .header-content p {
+
+      font-size: 1.5rem;
+
+      color: #ffccdd;
+
+    }
+
+    /* Menu */
+
+    .menu {
+
+      padding: 4rem 2rem;
+
+      background: url('https://images.unsplash.com/photo-1541544741938-0af808871cc0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+
+    }
+
+    .menu-columns {
+
+      display: flex;
+
+      gap: 2rem;
+
+      flex-wrap: wrap;
+
+    }
+
+    .menu-column {
+
+      flex: 1;
+
+    }
+
+    .menu-item {
+
+      margin-bottom: 1.5rem;
+
+    }
+
+    .item-name {
+
+      font-weight: bold;
+
+      display: flex;
+
+      justify-content: space-between;
+
+    }
+
+    .item-description {
+
+      font-size: 0.9rem;
+
+      margin-top: 0.5rem;
+
+    }
+
+    /* Order Now Section */
+
+    .order-now {
+
+      background: url('https://images.unsplash.com/photo-1541544741938-0af808871cc0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+
+      text-align: center;
+
+      padding: 3rem 2rem;
+
+    }
+
+    .order-btn {
+
+      background-color: #ffccdd;
+
+      color: #2e2e2e;
+
+      padding: 1rem 2rem;
+
+      margin: 1rem;
+
+      text-decoration: none;
+
+      border-radius: 30px;
+
+      font-weight: bold;
+
+      display: inline-block;
+
+      transition: background 0.3s;
+
+    }
+
+    .order-btn:hover {
+
+      background-color: #ff99aa;
+
+    }
+
+    /* Contact Section */
+
+    .contact-section {
+
+      background-color: #2e2e2e;
+
+      padding: 4rem 2rem;
+
+      color: #ffccdd;
+
+    }
+
+    .contact-columns {
+
+      display: flex;
+
+      gap: 4rem;
+
+      flex-wrap: wrap;
+
+    }
+
+    .contact-column {
+
+      flex: 1;
+
+    }
+
+    .contact-column h3 {
+
+      margin-bottom: 1rem;
+
+    }
+
+    /* Footer */
+
+    footer {
+
+      text-align: center;
+
+      padding: 2rem;
+
+      background-color: #1a1a1a;
+
+      color: #ffccdd;
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <header class="header">
+
+    <div class="header-content">
+
+      <h1>Life is Good Café</h1>
+
+      <p>Where Every Sip & Bite Feels Good</p>
+
+    </div>
+
+  </header>
+
+  <section class="menu">
+
+    <div class="menu-columns">
+
+      <div class="menu-column">
+
+        <h2>Premium Coffees</h2>
+
+        <div class="menu-item">
+
+          <div class="item-name">Espresso <span class="price">R25/R50</span></div>
+
+          <div class="item-description">A rich, bold shot of espresso made from premium Brazilian beans.</div>
+
+        </div>
+
+        <div class="menu-item">
+
+          <div class="item-name">Cappuccino <span class="price">R30/R37</span></div>
+
+          <div class="item-description">Espresso topped with steamed milk and frothed milk foam.</div>
+
+        </div>
+
+        <div class="menu-item">
+
+          <div class="item-name">Latte <span class="price">R32/R40</span></div>
+
+          <div class="item-description">Espresso with steamed milk and a touch of foam for smoothness.</div>
+
+        </div>
+
+        <div class="menu-item">
+
+          <div class="item-name">Americano <span class="price">R25/R30</span></div>
+
+          <div class="item-description">Espresso diluted with hot water to create a smooth coffee.</div>
+
+        </div>
+
+        <div class="menu-item">
+
+          <div class="item-name">Flat White <span class="price">R30/R35</span></div>
+
+          <div class="item-description">Espresso with steamed milk, creating a velvety and rich coffee drink.</div>
+
+        </div>
+
+        <h2>Milkshakes</h2>
+
+        <div class="menu-item">
+
+          <div class="item-name">Classic Vanilla Dream <span class="price">500ml R45 / 350ml R33</span></div>
+
+          <div class="item-description">Creamy vanilla ice cream blended with milk.</div>
+
+        </div>
+
+        <div class="menu-item">
+
+          <div class="item-name">Double Chocolate Bliss <span class="price">500ml R50 / 350ml R35</span></div>
+
+          <div class="item-description">Rich chocolate ice cream blended with chocolate syrup and milk.</div>
+
+        </div>
+
+        <div class="menu-item">
+
+          <div class="item-name">Strawberry Swirl Delight <span class="price">500ml R50 / 350ml R35</span></div>
+
+          <div class="item-description">Fresh strawberries blended with creamy strawberry ice cream and milk.</div>
+
+        </div>
+
+        <div class="menu-item">
+
+          <div class="item-name">Salted Caramel Crunch <span class="price">500ml R55 / 350ml R38</span></div>
+
+          <div class="item-description">Buttery caramel ice cream blended with milk and salted caramel sauce.</div>
+
+        </div>
+
+        <div class="menu-item">
+
+          <div class="item-name">Peanut Butter Banana Bliss <span class="price">500ml R50 / 350ml R35</span></div>
+
+          <div class="item-description">Creamy peanut butter, banana, and vanilla ice cream blended with milk.</div>
+
+        </div>
+
+        <h2>Smoothies</h2>
+
+        <div class="menu-item">
+
+          <div class="item-name">Tropical Bliss Smoothie <span class="price">R65</span></div>
+
+          <div class="item-description">Mango, pineapple, coconut milk, honey, ice.</div>
+
+        </div>
+
+        <div class="menu-item">
+
+          <div class="item-name">Berry Burst Smoothie <span class="price">R69</span></div>
+
+          <div class="item-description">Mixed berries, banana, yogurt, milk, honey.</div>
+
+        </div>
+
+        <div class="menu-item">
+
+          <div class="item-name">Green Power Smoothie <span class="price">R75</span></div>
+
+          <div class="item-description">Spinach, green apple, banana, lemon, ice.</div>
+
+        </div>
+
+        <div class="menu-item">
+
+          <div class="item-name">Peanut Butter & Banana Smoothie <span class="price">R68</span></div>
+
+          <div class="item-description">Banana, peanut butter, milk, yogurt, ice.</div>
+
+        </div>
+
+        <div class="menu-item">
+
+          <div class="item-name">Chocolate Delight Smoothie <span class="price">R70</span></div>
+
+          <div class="item-description">Banana, cocoa powder, milk, yogurt, honey.</div>
+
+        </div>
+
+        <div class="menu-item">
+
+          <div class="item-name">Strawberry & Banana Smoothie <span class="price">R65</span></div>
+
+          <div class="item-description">Banana, strawberry, milk, yogurt, honey.</div>
+
+        </div>
+
+      </div>
+
+      <div class="menu-column">
+
+        <h2>Freshly Squeezed Juices</h2>
+
+        <div class="menu-item">
+
+          <div class="item-name">Immune Booster Juice <span class="price">R48/R70</span></div>
+
+          <div class="item-description">Oranges, carrots, ginger, lemon.</div>
+
+        </div>
+
+        <div class="menu-item">
+
+          <div class="item-name">Green Detox Juice <span class="price">R55/R65</span></div>
+
+          <div class="item-description">Spinach, cucumber, green apple, celery, lemon.</div>
+
+        </div>
+
+        <div class="menu-item">
+
+          <div class="item-name">Fresh Orange Delight <span class="price">R45/R56</span></div>
+
+          <div class="item-description">Oranges.</div>
+
+        </div>
+
+        <div class="menu-item">
+
+          <div class="item-name">Green Energizer Juice <span class="price">R55/R65</span></div>
+
+          <div class="item-description">Apple, celery, lemon, ginger, cucumber.</div>
+
+        </div>
+
+        <div class="menu-item">
+
+          <div class="item-name">Zesty Carrot Apple Juice <span class="price">R45/R60</span></div>
+
+          <div class="item-description">Carrots, apple, ginger.</div>
+
+        </div>
+
+        <div class="menu-item">
+
+          <div class="item-name">Beetroot Blaze <span class="price">R45/R65</span></div>
+
+          <div class="item-description">Beetroot, Orange, Ginger, Apple.</div>
+
+        </div>
+
+        <div class="menu-item">
+
+          <div class="item-name">Apple Zest <span class="price">R40/R55</span></div>
+
+          <div class="item-description">Apples.</div>
+
+        </div>
+
+      </div>
+
+      <div class="menu-column">
+
+        <h2>Sandwiches & Wraps</h2>
+
+        <div class="menu-item">
+
+          <div class="item-name">Tuna Melt Sandwich <span class="price">R35</span></div>
+
+          <div class="item-description">Canned tuna, mayo, cheese, bread, salt, and pepper.</div>
+
+        </div>
+
+        <div class="menu-item">
+
+          <div class="item-name">Veggie Delight Sandwich <span class="price">R50</span></div>
+
+          <div class="item-description">Cucumbers, tomatoes, lettuce, cheese, bread, butter/hummus.</div>
+
+        </div>
+
+        <div class="menu-item">
+
+          <div class="item-name">Classic Mayo <span class="price">R55</span></div>
+
+          <div class="item-description">Chicken strips/nuggets, tortilla wrap, lettuce, chili mayo.</div>
+
+        </div>
+
+        <div class="menu-item">
+
+          <div class="item-name">Buffalo Chicken Melt <span class="price">R60</span></div>
+
+          <div class="item-description">Shredded chicken, Buffalo sauce, Cheddar, garlic mayo or ranch.</div>
+
+        </div>
+
+        <div class="menu-item">
+
+          <div class="item-name">Sloppy Joe Melt (Beef Mince) <span class="price">R55/R99</span></div>
+
+          <div class="item-description">Beef mince, Onion, Tomato paste or relish, Worcestershire sauce, Cheddar cheese. Served with Fries or alone.</div>
+
+        </div>
+
+        <div class="menu-item">
+
+          <div class="item-name">Hash Brown & Egg Sandwich <span class="price">R85</span></div>
+
+          <div class="item-description">Hash browns, Fried or scrambled egg, Cheddar cheese, Brioche bun, Mayo.</div>
+
+        </div>
+
+        <div class="menu-item">
+
+          <div class="item-name">Spicy Chicken Crunch Wrap <span class="price">R70</span></div>
+
+          <div class="item-description">Grilled or crispy chicken strips, Lettuce, Tomato, Cheddar cheese, Jalapeños (optional), sriracha sauce, Tortilla wrap.</div>
+
+        </div>
+
+        <div class="menu-item">
+
+          <div class="item-name">Taco Beef & Cheese Wrap <span class="price">R67</span></div>
+
+          <div class="item-description">Spiced beef mince (taco seasoning), Shredded lettuce, Grated cheddar, Tomato salsa or relish, Tortilla wrap.</div>
+
+        </div>
+
+        <h2>Mains</h2>
+
+        <div class="menu-item">
+
+          <div class="item-name">Spicy Crispy Wings Basket <span class="price">R73/R105</span></div>
+
+          <div class="item-description">6 or 8 crispy chicken wings tossed in BBQ, Buffalo, or Sweet Chili sauce. Served with: Seasoned fries or sweet potato chips, dipping sauce.</div>
+
+        </div>
+
+        <div class="menu-item">
+
+          <div class="item-name">Half Chicken Leg with Herby Garlic Butter <span class="price">R90</span></div>
+
+          <div class="item-description">Tender half chicken leg, marinated in lemon, garlic, herbs, and a touch of chili. Served with: Crispy roasted potatoes or a fresh garden side salad. Optional: Drizzle of house-made chimichurri.</div>
+
+        </div>
+
+        <div class="menu-item">
+
+          <div class="item-name">Chicken Strip & Waffle Plate <span class="price">R75</span></div>
+
+          <div class="item-description">Golden crispy chicken strips served on a toasted waffle, with spicy maple syrup drizzle.</div>
+
+        </div>
+
+        <div class="menu-item">
+
+          <div class="item-name">Chicken Trip Wrap or Box <span class="price">R65</span></div>
+
+          <div class="item-description">Chicken strips tossed in a flavour of the day (peri-peri, BBQ, honey mustard), wrapped in a tortilla or served in a takeaway box. Served with: Fries or a crunchy slaw. Optional: Turn into a “Combo Box” with juice or mini salad.</div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="order-now">
+
+    
+<div style="background-color: #f9f9f9; padding: 20px; margin-top: 20px; text-align: center;">
+
+  <a href="https://www.order.store/za/store/life-is-good-cafe/4iuL4PJKS0ymMB6ME_xP5w" 
+     target="_blank" 
+     class="order-btn" 
+     style="display: inline-block; background-color: #4CAF50; color: white; padding: 12px 25px; text-decoration: none; font-size: 16px; border-radius: 5px; margin: 10px;">
+    Order Now
+  </a>
+
+  <a href="#reservation" 
+     
+     </div>
+
+</div>
+    <!-- Reservation Section -->
+
+<div id="reservation" style="background-color: #f9f9f9; padding: 20px; margin-top: 20px; text-align: center;">
+
+  <h2>Book a Reservation</h2>
+
+  <p>Call us at <strong>+27 123 456 789</strong> or email <strong>info@lifesgoodcafe.co.za</strong></p>
+
+</div>
+
+<!-- Address and Map Section -->
+
+<div id="location" style="background-color: #f9f9f9; padding: 20px; margin-top: 20px; text-align: center;">
+
+  <h2>Find Us</h2>
+
+  <p>Life's Good Café<br>
+
+     349 Albert Rd, Woodstock, Cape Town, 7915
+
+  </p>
+
+  <!-- Google Maps Embed -->
+
+  <div style="margin-top: 20px;">
+
+    <iframe
+
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.288238267399!2d18.453850676116584!3d-33.9262828226947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc676e6ba6f35d%3A0x24a54b4cf2d80a3e!2s349%20Albert%20Rd%2C%20Woodstock%2C%20Cape%20Town%2C%207915%2C%20South%20Africa!5e0!3m2!1sen!2sza!4v1714390126952!5m2!1sen!2sza"
+
+      width="100%"
+
+      height="300"
+
+      style="border:0; border-radius: 10px;"
+
+      allowfullscreen=""
+
+      loading="lazy"
+
+      referrerpolicy="no-referrer-when-downgrade">
+
+    </iframe>
+
+  </div>
+
+  <!-- Get Directions Button -->
+
+  <div style="margin-top: 20px;">
+
+    <a href="https://www.google.com/maps/dir/?api=1&destination=349+Albert+Rd%2C+Woodstock%2C+Cape+Town%2C+7915" 
+
+       target="_blank"
+
+       style="display: inline-block; background-color: #FF5722; color: white; padding: 12px 25px; text-decoration: none; font-size: 16px; border-radius: 5px;">
+
+      Get Directions
+
+    </a>
+
+  </div>
+
+</div>
